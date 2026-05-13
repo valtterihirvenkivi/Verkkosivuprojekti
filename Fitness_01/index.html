@@ -7,127 +7,128 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/Fitness_01/styles/style.css">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
   <header>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="/Fitness_01/">
-        <img src="/Fitness_01/images/Vfit.png" alt="Vfit logo">
-      </a>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/Vfit.png" alt="Vfit logo">
+        </a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#paavalikko"
-        aria-controls="paavalikko"
-        aria-expanded="false"
-        aria-label="Avaa valikko"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#paavalikko"
+          aria-controls="paavalikko"
+          aria-expanded="false"
+          aria-label="Avaa valikko"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="paavalikko">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/Fitness_01/ruokasuunnitelmat/">Ruoka suunnitelmat</a>
-          </li>
+        <div class="collapse navbar-collapse" id="paavalikko">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./ruokasuunnitelmat/index.html">Ruoka suunnitelmat</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="/Fitness_01/treeniohjelmat/">Treeniohjelmat</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./treeniohjelmat/index.html">Treeniohjelmat</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="/Fitness_01/tiedot/">Bmi laskuri</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="./tiedot/index.html">Bmi laskuri</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 
+  <section class="container py-5">
+    <div class="row align-items-start">
+      <div class="col-lg-6 text-start">
+        <h1 class="display-4 fw-bold">
+          <span class="v-kirjain">V</span>fit fitness
+        </h1>
 
- <section class="container py-5">
-  <div class="row align-items-start">
-    <div class="col-lg-6 text-start">
-      <h1 class="display-4 fw-bold">
-        <span class="v-kirjain">V</span>fit fitness
-      </h1>
+        <p class="lead">
+          Ruokasuunnitelmat ja treeniohjelmat tavoitteidesi tueksi.
+        </p>
 
-      <p class="lead">
-        Ruokasuunnitelmat ja treeniohjelmat tavoitteidesi tueksi.
-      </p>
+        <a href="./treeniohjelmat/index.html" class="btn btn-success">
+          Katso treeniohjelmat
+        </a>
 
-      <a href="/Fitness_01/treeniohjelmat/" class="btn btn-success">
-        Katso treeniohjelmat
-      </a>
+        <div class="row row-cols-1 row-cols-sm-2 g-3 mt-3 table-kortit">
+          <div class="col">
+            <div class="card mini-card">
+              <div class="card-body">
+                <h6 class="card-title">Kattavat ruoka</h6>
+                <p class="card-text">+100 tyytyväistä asiakasta</p>
+              </div>
+            </div>
+          </div>
 
-      <div class="row row-cols-1 row-cols-sm-2 g-3 mt-3 table-kortit">
-        <div class="col">
-          <div class="card mini-card">
-            <div class="card-body">
-              <h6 class="card-title">Kattavat ruoka</h6>
-              <p class="card-text">+100 tyytyväistä asiakasta</p>
+          <div class="col">
+            <div class="card mini-card">
+              <div class="card-body">
+                <h6 class="card-title">Treeniohjelmat</h6>
+                <p class="card-text">+50 tyytyväistä asiakasta</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mini-card">
+              <div class="card-body">
+                <h6 class="card-title">Ammattitaitoinen valmennus</h6>
+                <p class="card-text">+25 tyytyväistä asiakasta</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mini-card">
+              <div class="card-body">
+                <h6 class="card-title">24/7</h6>
+                <p class="card-text">Avustus</p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card mini-card">
-            <div class="card-body">
-              <h6 class="card-title">Treeniohjelmat</h6>
-              <p class="card-text">+50 tyytyväistä asiakasta</p>
-            </div>
-          </div>
+      <div class="col-lg-6 text-center text-lg-end mt-5 mt-lg-0">
+        <img
+          src="./images/Mallikuva.png"
+          alt="Vfit fitness"
+          class="img-fluid hero-kuva"
+        >
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-yhteystiedot mt-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="./images/Vfit.png" alt="Vfit logo" width="70" height="70">
         </div>
 
-        <div class="col">
-          <div class="card mini-card">
-            <div class="card-body">
-              <h6 class="card-title">Ammattitaitoinen valmennus</h6>
-              <p class="card-text">+25 tyytyväistä asiakasta</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card mini-card">
-            <div class="card-body">
-              <h6 class="card-title">24/7</h6>
-              <p class="card-text">Avustus</p>
-            </div>
-          </div>
+        <div class="col-md-6 text-md-end mt-3 mt-md-0">
+          <p class="mb-1">Sähköposti: info@vfit.fi</p>
+          <p class="mb-1">Puhelin: 040 123 4567</p>
+          <p class="mb-0">Instagram: @vfitfitness</p>
         </div>
       </div>
     </div>
+  </footer>
 
-    <div class="col-lg-6 text-center text-lg-end mt-5 mt-lg-0">
-      <img
-        src="/Fitness_01/images/Mallikuva.png"
-        alt="Vfit fitness"
-        class="img-fluid hero-kuva"
-      >
-    </div>
-  </div>
-</section>
-<footer class="footer-yhteystiedot mt-5">
-  <div class="container py-4">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="/Fitness_01/images/Vfit.png" alt="Vfit logo" width="70" height="70">
-      </div>
-
-      <div class="col-md-6 text-md-end mt-3 mt-md-0">
-        <p class="mb-1">Sähköposti: info@vfit.fi</p>
-        <p class="mb-1">Puhelin: 040 123 4567</p>
-        <p class="mb-0">Instagram: @vfitfitness</p>
-      </div>
-    </div>
-  </div>
-</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
