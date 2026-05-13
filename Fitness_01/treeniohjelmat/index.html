@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Treeniohjelmat</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/Fitness_01/styles/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="/Fitness_01/">
+          <img src="/Fitness_01/images/Vfit.png" alt="Vfit logo" width="60" height="60">
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#paavalikko"
+          aria-controls="paavalikko"
+          aria-expanded="false"
+          aria-label="Avaa valikko"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="paavalikko">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/Fitness_01/ruokasuunnitelmat/">Ruoka suunnitelmat</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="/Fitness_01/treeniohjelmat/">Treeniohjelmat</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/Fitness_01/tiedot/">Bmi laskuri</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-5">
+    <h1>Treeniohjelmat</h1>
+    <p>Tarjoamme kattavia treeniohjelmia eri tason ja tavoitteiden mukaan. Ilmoittaudu mukaan alhaalta!</p>
+
+    <section class="py-5">
+      <h2 class="mb-4">Asiakaskokemukset</h2>
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100 asiakas-card">
+            <div class="card-body">
+              <h5 class="card-title">Marjatta, 76</h5>
+              <h6 class="card-subtitle mb-2">Arjen ihanuutta</h6>
+              <p class="card-text">
+                Treeniohjelma auttoi minua jaksamaan eläkepäivissä paremmin. Kehitystä tapahtui ja olo on energisempi.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 asiakas-card">
+            <div class="card-body">
+              <h5 class="card-title">Jaakko, 25</h5>
+              <h6 class="card-subtitle mb-2">Hyviä tuloksia</h6>
+              <p class="card-text">
+                Aloitin treeniohjelman ja huomasin nopeasti, että jaksan paremmin ja kehitystä tapahtui.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="p-4 palaute-box">
+            <h2 class="mb-4">Ilmoittaudu mukaan</h2>
+
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nimi</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Kirjoita nimesi">
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Sähköposti</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="sahkoposti@example.com">
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Mitä tavoittelet?</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Kirjoita viestisi"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-success">
+                Lähetä
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-yhteystiedot mt-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="/Fitness_01/images/Vfit.png" alt="Vfit logo" width="70" height="70">
+        </div>
+
+        <div class="col-md-6 text-md-end mt-3 mt-md-0">
+          <p class="mb-1">Sähköposti: info@vfit.fi</p>
+          <p class="mb-1">Puhelin: 040 123 4567</p>
+          <p class="mb-0">Instagram: @vfitfitness</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

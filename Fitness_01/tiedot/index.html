@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bmi laskuri</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/Fitness_01/styles/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="/Fitness_01/">
+          <img src="/Fitness_01/images/Vfit.png" alt="Vfit logo" width="60" height="60">
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#paavalikko"
+          aria-controls="paavalikko"
+          aria-expanded="false"
+          aria-label="Avaa valikko"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="paavalikko">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/Fitness_01/ruokasuunnitelmat/">Ruoka suunnitelmat</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/Fitness_01/treeniohjelmat/">Treeniohjelmat</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="/Fitness_01/tiedot/">Bmi laskuri</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-5">
+    <h1>Bmi laskuri</h1>
+    <p>Laske oma BMI-arvosi.</p>
+
+    <section class="py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="card bmi-card">
+            <div class="card-body">
+              <h2 class="card-title mb-4">BMI-laskuri</h2>
+
+              <div class="mb-3">
+                <label for="paino" class="form-label">Paino (kg)</label>
+                <input type="number" class="form-control" id="paino" placeholder="Esim. 75">
+              </div>
+
+              <div class="mb-3">
+                <label for="pituus" class="form-label">Pituus (cm)</label>
+                <input type="number" class="form-control" id="pituus" placeholder="Esim. 180">
+              </div>
+
+              <button class="btn btn-success" onclick="laskeBMI()">
+                Laske BMI
+              </button>
+
+              <div id="bmiTulos" class="alert alert-success mt-4 d-none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-yhteystiedot mt-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="/Fitness_01/images/Vfit.png" alt="Vfit logo" width="70" height="70">
+        </div>
+
+        <div class="col-md-6 text-md-end mt-3 mt-md-0">
+          <p class="mb-1">Sähköposti: info@vfit.fi</p>
+          <p class="mb-1">Puhelin: 040 123 4567</p>
+          <p class="mb-0">Instagram: @vfitfitness</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function laskeBMI() {
+      const paino = Number(document.getElementById("paino").value);
+      const pituusCm = Number(document.getElementById("pituus").value);
+      const tulos = document.getElementById("bmiTulos");
+
+      if (!paino || !pituusCm) {
+        tulos.className = "alert alert-danger mt-4";
+        tulos.textContent = "Syötä paino ja pituus.";
+        return;
+      }
+
+      const pituusM = pituusCm / 100;
+      const bmi = paino / (pituusM * pituusM);
+
+      let luokka = "";
+
+      if (bmi < 18.5) {
+        luokka = "Alipaino";
+      } else if (bmi < 25) {
+        luokka = "Normaalipaino";
+      } else if (bmi < 30) {
+        luokka = "Ylipaino";
+      } else {
+        luokka = "Merkittävä ylipaino";
+      }
+
+      tulos.className = "alert alert-success mt-4";
+      tulos.textContent = "BMI-arvosi on " + bmi.toFixed(1) + " - " + luokka;
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
