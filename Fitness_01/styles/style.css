@@ -1,8 +1,5 @@
 body {
   background-color: black;
-}
-body {
-  background-color: black;
   color: #57C80A;
 }
 
@@ -16,8 +13,9 @@ body {
 }
 
 .navbar .nav-link:hover {
-  color: #57C80A !important;
+  color: #7ee83a !important;
 }
+
 .navbar .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -36,13 +34,16 @@ body {
   object-fit: contain;
   display: block;
 }
+
 .v-kirjain {
   color: black;
   -webkit-text-stroke: 1px #808080;
 }
+
 .table-kortit {
-  max-width: 520px;
+  max-width: 560px;
   margin-left: 0;
+  margin-top: 20px !important;
 }
 
 .mini-card {
@@ -64,11 +65,7 @@ body {
   font-size: 14px;
   margin-bottom: 0;
 }
-.table-kortit {
-  max-width: 560px;
-  margin-left: 0;
-  margin-top: 20px !important;
-}
+
 .asiakas-card {
   background-color: #222222;
   border: 2px solid #57C80A;
@@ -78,6 +75,7 @@ body {
 .asiakas-card .card-subtitle {
   color: #57C80A !important;
 }
+
 .palaute-box {
   background-color: #1C1C1C;
   border: 2px solid #57C80A;
@@ -104,13 +102,35 @@ body {
 .form-label {
   color: #57C80A;
 }
+
 .bmi-card {
   background-color: #1C1C1C;
   border: 2px solid #57C80A;
   color: #57C80A;
 }
+
 .footer-yhteystiedot {
+  width: 100%;
   background-color: #1C1C1C;
   border-top: 2px solid #57C80A;
   color: #57C80A;
+}
+
+@media (max-width: 768px) {
+  .navbar .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-brand img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.navbar-toggler {
+  border: 2px solid #57C80A;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(98%) saturate(925%) hue-rotate(54deg) brightness(96%) contrast(95%);
 }
